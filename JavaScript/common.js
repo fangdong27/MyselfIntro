@@ -57,7 +57,7 @@ function showInfo(str) {
                     packages: [
                            {
                                name: 'echarts',
-                               location: '/PersonIntro/PersonTimesHouse/eCharts',
+                               location: '/MyselfIntro/eCharts',
                                //为兼容页面路径 /PersonIntro/PersonTimesHouse/eCharts
                                main: 'echarts'
                            },
