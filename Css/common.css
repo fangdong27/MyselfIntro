@@ -1,0 +1,177 @@
+@font-face{ font-family: 'YaHeiAuto'; src:url('../Files/msyh.ttf') format('truetype'),font-weight: normal; font-style: normal; } 
+html {-webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-size: 625%; font-family: "Microsoft YaHei",YaHeiAuto,helvetica, arial, sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} 
+body {margin:0px; padding: 0px;text-align:center; font-size:14px; font-size:0.14rem; color:#474747;background-color:#e6e6e6;}/*background:url(../Imgs/2.jpg) no-repeat center top;width:100%;height:100%;background-attachment:fixed;*/
+input,textarea,botton,ul,li{border:none;outline:none;font-size:14px;font-size:0.14rem;font-family: "Microsoft YaHei",YaHeiAuto,helvetica, arial, sans-serif;}
+a{text-decoration:none; border:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:none;}
+.clearFloat:after{content:'';display:block;clear:both;visibility:hidden;height:0;}
+.clearFloat{zoom:1;}/*#83cff1*/
+main{width:10rem;margin:0.15rem auto 0.15rem auto; background-color:#fbfbdb;border-radius:0.05rem;-webkit-border-radius:0.05rem;-moz-border-radius:0.05rem;-o-border-radius:0.05rem;-ms-border-radius:0.05rem;  }/* rgba(180, 203, 236, 0.4)*/
+ul li{list-style:none;line-height:0.3rem;padding:0rem;margin:0.05rem auto;}
+ul{display: block;list-style-type: disc; -webkit-margin-before: 0rem;-webkit-margin-after: 0rem;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0rem;}
+/*==========圆角边框=========*/
+.grayCircle{border:0.05rem solid #eaeaea; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;}
+.whiteCircle{border:0.03rem solid #fff; border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;}
+.circleBorder{border:0.03rem solid #fff;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;}
+/*=========动画效果==========*/
+.animationRotate{animation: rotate 2s linear 0s infinite;  -webkit-animation: rotate 2s linear 0s infinite;
+              -moz-animation: rotate 2s linear 0s infinite ; /* Firefox */-o-animation: rotate 2s linear 0s infinite;    /* Opera */}
+.animationLeft{animation: fadeInLeft 2s ease-in 0s 1 ;  -webkit-animation: fadeInLeft 2s ease-in 0s 1 ;
+              -moz-animation: fadeInLeft 2s ease-in 0s 1 ; /* Firefox */-o-animation: fadeInLeft 2s ease-in 0s 1;    /* Opera */}
+.animationRight{animation: fadeInRight 2s ease-in 0s 1 ;  -webkit-animation: fadeInRight 2s ease-in 0s 1 ;
+              -moz-animation: fadeInRight 2s ease-in 0s 1 ; /* Firefox */-o-animation: fadeInRight 2s ease-in 0s 1;    /* Opera */}
+.animationZoomIn{animation: zoomIn 2s ease-in-out 0s 1 ;  -webkit-animation: zoomIn 2s ease-in-out 0s 1  ;
+              -moz-animation: zoomIn 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: zoomIn 2s ease-in-out 0s 1;    /* Opera */}
+.animationZoomInL{animation: zoomInLeft 2s ease-in-out 0s 1 ;  -webkit-animation:zoomInLeft 2s ease-in-out 0s 1 ;
+              -moz-animation: zoomInLeft 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: zoomInLeft 2s ease-in-out 0s 1;    /* Opera */}
+.animationZoomInR{animation: zoomInRight 2s ease-in-out 0s 1 ;  -webkit-animation:zoomInRight 2s ease-in-out 0s 1 ;
+              -moz-animation: zoomInRight 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: zoomInRight 2s ease-in-out 0s 1;    /* Opera */}
+.animationFadeInDown{animation: fadeInDown 2s ease-in-out 0s 1 ;  -webkit-animation: fadeInDown 2s ease-in-out 0s 1 ;
+              -moz-animation: fadeInDown 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: fadeInDown 2s ease-in-out 0s 1;    /* Opera */}
+.animationFadeInUp{animation: fadeInUp 2s ease-in-out 0s 1 ;  -webkit-animation: fadeInUp 2s ease-in-out 0s 1 ;
+              -moz-animation: fadeInUp 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: fadeInUp 2s ease-in-out 0s 1;    /* Opera */}
+.animationPlus{animation: plus2 1s ease-in 0s infinite alternate;  -webkit-animation: plus2 1s ease-in 0s infinite alternate;
+              -moz-animation: plus2 1s ease-in 0s  infinite alternate ; /* Firefox */-o-animation: plus2 1s ease-in 0s infinite alternate;    /* Opera */}
+.animationFlip{animation: flipInX 2s ease-in-out 0s  1;  -webkit-animation: flipInX 2s ease-in-out 0s 1 ;
+              -moz-animation: flipInX 2s ease-in-out 0s 1 ; /* Firefox */-o-animation: flipInX 2s ease-in-out 0s 1;    /* Opera */}
+.animationFlipNext{animation: flipNext 1s linear 0s  1;  -webkit-animation: flipNext 1s linear 0s 1 ;
+              -moz-animation: flipNext 1s linear 0s 1 ; /* Firefox */-o-animation: flipNext 1s linear 0s 1;    /* Opera */}
+.animationFlipPre{animation: flipPre 1s linear 0s  1;  -webkit-animation: flipPre 1s linear 0s 1 ;
+              -moz-animation: flipPre 1s linear 0s 1 ; /* Firefox */-o-animation: flipPre 1s linear 0s 1;    /* Opera */}
+/*========旋转效果===========*/
+.rotateBox{transform:rotate(135deg);-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-ms-transform:rotate(135deg);-o-transform:rotate(135deg);}
+/*========边框阴影=============*/
+.boxShadow{box-shadow:0px 0px 20px 2px #424242; -webkit-box-shadow:0px 0px 20px 2px #424242;-moz-box-shadow:0px 0px 20px 2px #424242;-ms-box-shadow:0px 0px 20px 2px #424242;-o-box-shadow:0px 0px 20px 2px #424242;}
+/*==========文字阴影========*/
+.textShadow{text-shadow:0px 0px 20px #424242;  }
+.textShadow2{text-shadow:3px 2px 5px #7175a7;  }
+
+#top .topNav div,#left,#right,#top .topNav .topM ul li,#professionSkill .eChart,#professionSkill .professionInfo,
+#professionSkill .professionInfo div, span.arrowDiv, span.arrow,#projectExp .projectInfo .nextPro,
+#top .topNav .topL .list,#top .topNav .topL .list span{display:inline-block;*display:inline;*zoom:1;}
+
+#top .topImg img,#top .topNav .audio img,main #left .personImg .me img{width:100%;height:100%;display:inline-block;*display:inline;*zoom:1;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%;}
+#top,footer{height:0.55rem;line-height:0.55rem;width:100%;background-color:#000;color:#fff;min-width:10rem;}
+#top .topNav{width:9rem;margin:0rem auto;text-align:center;padding:0rem 0.5rem;}
+#top .topNav div{vertical-align:top;}
+#top .topNav .topL{float:left;width:25%;}
+#top .topNav .topL .list{display:none;}
+#top .topNav .topR{float:right;width:10%;}
+#top .topNav .topImg{width:0.4rem;height:0.4rem;vertical-align:middle;margin:0rem 0.1rem;}
+#top .topNav .audio{vertical-align:middle;width:0.4rem;height:0.4rem;cursor:pointer; margin:0rem 0.1rem;}
+/*#top .topNav .audio audio{visibility:hidden;}*/
+#top .topNav .topM { margin:0rem auto;text-align:center;width:65%; }
+#top  #topNav{display:inline-block;}
+#top .topNav .topM ul li {margin:0rem 0.1rem;padding:0rem 0.03rem;line-height:0.55rem;cursor:pointer;width:22%;}
+#top .topNav .topM ul li:hover,main #left nav ul li:hover,#top .topNav .topM ul li.currentNav,main #left nav ul li.currentNav{background-color:rgba(180, 203, 236, 0.4);color:#f15858;font-size:0.16rem;font-weight:bold;box-shadow:0px 0px 20px 1px #6fa8c3; -webkit-box-shadow:0px 0px 20px 1px #6fa8c3;-moz-box-shadow:0px 0px 20px 1px #6fa8c3;-ms-box-shadow:0px 0px 20px 1px #6fa8c3;-o-box-shadow:0px 0px 20px 1px #6fa8c3;}
+#top .topNav span.pJob{display:none}
+main #left {width:30%;background-color:#83cff1; color:#fff;height:100%;border-bottom-left-radius:0.05rem;border-top-left-radius:0.05rem;-webkit-border-bottom-left-radius:0.05rem;-webkit-border-top-left-radius:0.05rem;-mos-border-bottom-left-radius:0.05rem;-mos-border-top-left-radius:0.05rem;-ms-border-bottom-left-radius:0.05rem;-ms-border-top-left-radius:0.05rem;-o-border-bottom-left-radius:0.05rem;-o-border-top-left-radius:0.05rem;} 
+main #left nav ul li:hover,main #left nav ul li.currentNav{border-radius:0.1rem;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;-o-border-radius:0.1rem;-ms-border-radius:0.1rem;}
+main #left .personImg,main #left .personName{margin:0.1rem auto;}
+main #left .personImg{margin-top:1rem;}
+main #left .personImg .me{width:1.5rem;height:1.5rem;margin:0.1rem auto; }
+main #left .personName{font-size:0.22rem;line-height:0.35rem;}
+main #left nav{margin:0.2rem auto;}
+main #left nav ul li{margin:0.05rem 0.1rem;padding:0rem 0.03rem; cursor:pointer;line-height:0.4rem;}
+main #left .jobDiv{line-height:0.35rem;}
+main #left .job{font-weight:bold;font-size:16px;font-size:0.16rem;}
+main #left .job .jobDetails{font-size:0.20rem;}
+main #left .linkDiv{margin:0.1rem auto;line-height:0.28rem; }
+main #left .linkDiv a{color:#f15858;}
+main #left .linkDiv .linkTitle{ font-size:0.2rem;line-height:0.35rem;font-weight: bold; }
+main #right{float:right;width:70%;height:100%; background-color:#fbfbdb;border-bottom-right-radius:0.05rem;border-top-right-radius:0.05rem;-webkit-border-bottom-right-radius:0.05rem;-webkit-border-top-right-radius:0.05rem;-mos-border-bottom-right-radius:0.05rem;-mos-border-top-right-radius:0.05rem;-ms-border-bottom-right-radius:0.05rem;-ms-border-top-right-radius:0.05rem;-o-border-bottom-right-radius:0.05rem;-o-border-top-right-radius:0.05rem;}
+main #right .motto{height:0.05rem;margin-top:0.1rem;}
+main #right .motto img{vertical-align:middle;}
+main #right .detailsInfo{ padding:0rem 0rem 0.1rem 0rem;margin-top:0.1rem;}
+#personInfo{width:90%;margin:0.1rem auto;}
+#personInfo .p_info,#personInfo .p_info2{background-color:rgba(180, 203, 236, 0.4);margin:0.15rem auto; line-height:0.5rem;font-size:0.16rem;border:none;border-radius:0.1rem;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;-o-border-radius:0.1rem;-ms-border-radius:0.1rem;width:100%;}
+#personInfo .p_info .userInfo{width:40%; }
+#personInfo .p_info span.splitLine{width:3%;height:0.35rem;margin:0rem auto;vertical-align:middle; border-left:0.01rem solid #756e66;border-top:none;border-bottom:none;border-right:none; display:inline-block;*display:inline;*zoom:1;} 
+#personInfo .p_info span.left{float:left;text-align:right;}
+#personInfo .p_info span.right{float:right;text-align:left;}
+#personInfo .p_info a{color:#f15858;}
+#personInfo .p_info .selfEval{text-indent:0.24rem;font-size:0.18rem; font-weight: bold; color: #eb5858;}
+#personInfo .p_info .selfEvalCont{line-height:0.28rem;font-size:0.14rem;text-align:left; text-indent:0.24rem;padding:0rem 0.2rem 0.1rem 0.2rem; }
+#personInfo .p_info .selfEvalCont span{display:block;}
+#pContactInfo,#personInfo .p_info2{display:none;}
+#professionSkill,#projectExp{display:none;}
+#professionSkill{text-align:center;}
+#professionSkill .eChart{width:100%; margin-bottom:0.1rem;}
+#mySkill,#mySkill canvas {width:100%;margin:0rem auto;height:3rem;color:#fff;}
+#professionSkill .professionInfo{vertical-align:top;width:90%;text-align:left; position:relative;height:100%; overflow:hidden;margin:0.05rem auto ;}
+#professionSkill .professionInfo .content,#projectExp .projectInfo .proIntro .content{width:102%;height:100%; padding-right:0.2rem;overflow-y:scroll;overflow-x:hidden;}
+#professionSkill .professionInfo .skillList{width:100%; border-bottom:0.01rem dashed #afaf99;line-height:0.25rem;padding:0rem 0.1rem;margin:0.05rem auto;}
+#projectExp{margin-bottom:0.1rem;text-align:left;margin-top:0.1rem;}
+#projectExp .projectInfo{margin-bottom:0.1rem;width:90%;margin:0rem auto 0.1rem auto;position:relative;text-align:center;}
+#projectExp .projectInfo .proName,#projectExp .projectInfo .proName a{font-size:0.22rem;font-weight:bold;line-height:0.45rem;text-align:left;color:#f33a3a;}/*#93d4f1*/
+#projectExp .projectInfo .proIntro{width:100%;height:100%;overflow:hidden;text-align:left;}
+#projectExp .projectInfo .proIntro div{text-indent:0.12rem;line-height:0.28rem;}
+#projectExp .projectInfo .proIntro .subTitle{font-weight:bold;font-size:0.17rem;color:#55576d;}
+#projectExp .projectInfo .proIntro a{color:#f15858;}
+#projectExp .projectInfo .proIntro a:hover{font-weight:bold;}
+#projectExp .projectInfo #prePro{display:none;}
+#projectExp .projectInfo .nextPro{width:1rem;margin:0.1rem;cursor:pointer; line-height:0.4rem;  text-align:center;background-color:#7175a7;color:#fff;border-radius:0.1rem;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;-o-border-radius:0.1rem;-ms-border-radius:0.1rem;}
+span.arrowDiv{position:absolute;z-index:2;right:0rem;bottom:0.2rem;}
+span.arrow{ border:0.03rem solid ;width:0.1rem;height:0.1rem; border-color:#7175a7 #7175a7 transparent transparent;margin-top:0.12rem;margin-right:-0.1rem}
+span.arrowBottom{margin-bottom: 0.35rem; position: relative; top: 0.45rem; right: 0.1rem;}
+footer{text-align:center;position:static;bottom:0rem; font-size:0.12rem; }
+footer a{color:#fff;}
+footer a:hover,#projectExp .projectInfo .proIntro a:hover{text-decoration:underline;color:#f15858;}
+body.modal-open {
+    position: fixed;
+    width: 100%;
+}
+@media screen and (max-width:780px){
+    .textShadow{text-shadow:0px 0px 20px #cdebf9;  }
+    .textShadow2{text-shadow:3px 2px 2px #7175a7;  }
+   #hideBg{position:absolute;top:0rem;left:0rem;background-color:#000;filter:alpha(opacity=60);opacity:0.6;width:100%;height:100%;display:none;z-index:9999;}
+   #top{position:fixed;top:0rem;z-index:10000;}
+   #top  #topNav{display:none;}
+   #top .topNav{width:100%;margin:0rem auto;text-align:center;padding:0rem ;}
+   #top .topNav .topL{ width: 100%; position: fixed;top: 0rem; left: 0rem;}
+   #top .topNav .topR{width:25%;}
+   #top .topNav .topL .myName{width:100%;text-align:center;font-size:0.22rem;line-height:0.40rem;}
+   #top .topNav span.pJob{display:block;line-height:0.12rem;font-size:0.12rem;}
+   #top,footer{width:100%;min-width:0;}
+   #top .topNav .topImg{margin:0rem 0rem 0rem 0.02rem; position: absolute; left: 0.2rem; top: 0.05rem;}
+   #top .topNav .topM ul li{padding: 0rem 0.03rem;line-height: 0.28rem;}
+   #top .topNav .topL .list{width:0.3rem; text-align:center;line-height:0.03rem;display:none;position:absolute;top:0.15rem;left:0.3rem;}
+   #top .topNav .topL .list .listDiv{width:100%; }
+   #top .topNav .topL .list span{width:90%;height:0.02rem;background-color:#fff;}
+   main{width:100%;margin-top:0.55rem;background-color:none;overflow-x:hidden;}
+   main #left{display:none;width:60%;background-color:rgba(0,0,0,0.8);position:fixed;left:0rem;z-index:10000;margin-top:-0.02rem;}
+   main #left nav{margin:0rem;}
+   main #left .jobDiv,main #left .personName{display:none;}
+   main #left .personImg{margin-top:0.3rem;}
+   main #left .personImg .me{width:0.95rem;height:0.95rem;}   
+   main #left .job{font-size:0.15rem;}
+   main #left .job .jobDetails{font-size:0.17rem;}
+   main #right{background-color:#83cff1;color:#fff;}
+   main #right .motto{line-height:1.2rem;}
+   #contact .userInfo span{color:#f15858;}
+   
+   main #right{width:100%;float:none;}
+   main #right .motto img{width:100%;height:100%;}
+   #mySkill, #mySkill canvas{width:100%;}
+   #personInfo{width:96%;}
+   #personInfo .p_info span.splitLine{width:auto; border-left: 0.01rem solid #fff;}
+   #personInfo .p_info{font-size:0.15rem;line-height:0.35rem;}
+   #personInfo .p_info,#personInfo .p_info2{background-color: rgba(180, 203, 236, 0.8);}
+   #personInfo .p_info2{display:block;}
+   #personInfo .p_info .userInfo{width:49%;display:block;} 
+   #personInfo .p_info span.left{text-align:center;}
+   #personInfo .p_info span.right{text-align:center;}
+   #professionSkill .professionInfo .content, #projectExp .projectInfo .proIntro .content{width:100%;padding-right:0rem;}
+   #professionSkill .professionInfo .skillList{width:96%;border-bottom:0.01rem dashed #fff;}
+   #graduation{display:none;}
+   #pContactInfo,#pGraduation{width:80%;margin:0rem auto;position:absolute; left:10%;line-height:0.4rem;padding:0.1rem 0rem; z-index:10000;background-color:rgba(0,0,0,0.8);border-radius:0.1rem;-webkit-border-radius:0.1rem;-moz-border-radius:0.1rem;-o-border-radius:0.1rem;-ms-border-radius:0.1rem;}
+   #pContactInfo a,#pGraduation a{color:#fff;}
+   #pContactInfo .userInfo,#pGraduation .userInfo2{width:100%; display:block;}
+   #projectExp .projectInfo .proName, #projectExp .projectInfo .proName a{color:#ef9595;}
+   footer{line-height:0.25rem;}
+}
+
+
+
+
+
+

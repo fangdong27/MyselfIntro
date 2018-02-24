@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="renderer" content="webkit" />
+    <title>方冬-WEB前端开发</title>
+    <link href="../Imgs/logo.ico" rel="shortcut icon" />
+    <link href="../Css/animation.css" rel="stylesheet" />
+    <link href="../Css/common.css" rel="stylesheet" />
+    <script src="../JavaScript/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../eCharts/esl.js"></script>
+    <script type="text/javascript" src="../eCharts/zrender/zrender.js"></script>
+    <script type="text/javascript" src="../eCharts/zrender/config.js"></script> 
+</head>
+<body>
+    <nav id="top">
+        <div class="topNav clearFloat">
+            <div class="topL animationZoomInL" id="pInfo">
+                <div class="topImg whiteCircle" id="pImg"><img src="../Imgs/me.jpg" /></div>
+                <div class="list" id="listMenu"><div class="listDiv"><span class="line"></span><span class="line"></span><span class="line"></span></div></div>
+                <div class="myName">方冬<span class="pJob">应聘岗位：<b>WEB前端开发</b></span></div>
+            </div>
+            <div class="topM animationFadeInDown" id="topNav">
+                <ul>
+                    <li onclick="showInfo('personInfo')" class="currentNav personInfo">基本信息</li>
+                    <li onclick="showInfo('professionSkill')" class="professionSkill">专业技能</li>
+                    <li onclick="showInfo('projectExp')" class="projectExp">项目经验</li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <main class="main boxShadow clearFloat" id="main">
+        <!--设置遮罩层-->
+        <div id="hideBg"></div>
+        <section id="left">
+            <div class="personImg animationFadeInDown">
+                <div class="me grayCircle"><img src="../Imgs/me.jpg" /></div>
+            </div>
+            <div class="personName animationPlus">方冬</div>
+            <div class="jobDiv animationFlipNext textShadow">
+                <div class="job">应聘岗位：<span class="jobDetails">WEB前端开发</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li onclick="showInfo('personInfo')" class="currentNav personInfo animationLeft">基本信息</li>
+                    <li onclick="showInfo('professionSkill')" class="professionSkill animationRight">专业技能</li>
+                    <li onclick="showInfo('projectExp')" class="projectExp animationLeft">项目经验</li>
+                </ul>
+            </nav>
+            <div class="linkDiv">
+                <div class="linkTitle textShadow">联系方式：</div>
+                <div>电话：18129878067</div>
+                <div>邮箱：<a href="mailto:ava_fdong9227@163.com">ava_fdong9227@163.com</a></div>
+            </div>
+        </section>
+        <section id="right">
+            <div class="motto animationFlip">
+                <!--<img src="../Imgs/motto.png" />-->
+            </div>
+            <div class="detailsInfo">
+                <section id="personInfo">
+                    <div class="p_info animationZoomInR clearFloat">
+                        <span class="userInfo left">姓名：<span>方冬</span></span>
+                        <span class="splitLine"></span>
+                        <span class="userInfo right">出生年月：<span>1992.12</span></span>
+                    </div>
+                    <div class="p_info animationZoomInL clearFloat">
+                        <span class="userInfo left">性别：<span>女</span></span>
+                        <span class="splitLine"></span>
+                        <span class="userInfo right">学历：<span>本科</span></span>                       
+                    </div>
+                    <div class="p_info animationZoomInR clearFloat" id="contact">
+                        <span class="userInfo left">电话：<span>18129878067</span></span>
+                        <span class="splitLine"></span>
+                        <span class="userInfo right">邮箱：<span><a href="mailto:ava_fdong9227@163.com">ava_fdong9227@163.com</a></span></span> 
+                    </div>
+                    <div id="pContactInfo" class="clearFloat animationZoomIn">
+                        <span class="userInfo left">电话：<span>18129878067</span></span>                        
+                        <span class="userInfo right">邮箱：<span><a href="mailto:ava_fdong9227@163.com">ava_fdong9227@163.com</a></span></span> 
+                    </div>
+                    <div class="p_info animationZoomInL clearFloat" id="graduation">
+                        <span class="userInfo left">毕业院校：<span>湖南女子学院</span></span>
+                        <span class="splitLine"></span>
+                        <span class="userInfo right">专业：<span>计算机科学与技术</span></span>
+                    </div>
+                    <div class="p_info animationZoomInR clearFloat">
+                        <span class="userInfo left">工作年限：<span>3年</span></span>
+                        <span class="splitLine"></span>
+                        <span class="userInfo right">工作地点：<span>长沙</span></span>
+                    </div>
+                    <div class="animationZoomIn p_info2 clearFloat" >
+                        <span class="userInfo2 left">毕业院校：<span>湖南女子学院</span></span>
+                    </div>
+					<div class="animationZoomIn p_info2 clearFloat"  > 
+                        <span class="userInfo2 right">专业：<span>计算机科学与技术</span></span>
+                    </div>
+                    <div class="p_info animationFadeInDown clearFloat">
+                        <div class="selfEval">自我评价</div>                         
+                        <div class="selfEvalCont">
+                            <span>
+                                虽然在校专业面向的是软件开发后端编程方面，学的是Java，但是本人独爱设计类，对前端编程很感兴趣，所以在web前端开发方向上多花了点功夫。
+                            </span>
+                            <span>
+                                在深圳工作三年的经历让我熟练的掌握了前端设计的开发与规范，也了解后端开发与前端数据传递的过程。
+                                工作中使用的是C#开发，采用ASP.NET语言，由于有Java编程的基础，使用C#开发的难度不大。除了掌握基本的前端技术，如：HTML，CSS2和CSS3，JavaScript，jQuery，简单的切图，p图等，每次开发项目都能学到很多新知识，新技术，比如：WEB安全管理中SQL盲注，跨站点脚本编制漏洞等；更了解Sql  Server中sql语句的编写规范；学会了移动端页面编写的规则，熟练掌握编写移动端页面。
+                                除了工作中必须掌握的开发技术外，闲暇时间还学习了解其他前端框架技术，如：React，Vue等。
+                            </span>
+                            <span>
+                                三年的工作积累了一定的开发经验，使自己有能力和信心胜任所赋予的职责以及面对任何困难和挑战。团队协作完成每个项目，网页设计的精美使设计出的系统软件更美观，更友好。
+                                虽然我个性较执着，喜追求完美，但这并不影响我顺利完成工作的能力，更会让我认真的对待每一份工作。
+                            </span>
+                        </div>
+                    </div>
+                </section>
+                <section id="professionSkill">
+                    <div class="eChart animationFlip">
+                        <div class="" id="mySkill"></div>
+                    </div>
+                    <div class="professionInfo">
+                        <div class="content" id="skillList">
+                            <div class="skillList animationLeft">1、精通HTML，CSS2/CSS3，熟练掌握CSS Hack，了解并善于调整浏览器兼容性。</div>
+                            <div class="skillList animationRight">2、熟练掌握JavaScript和jQuery，使用ajax方法更新局部数据。</div>
+                            <div class="skillList animationLeft">3、熟练掌握移动端B/S页面编写，了解各移动设备分辨率适配性。</div>
+                            <div class="skillList animationRight">4、了解Java及C#后台语言，了解SQL Server，会编写基本的sql语句。运用asp.net开发web网站。</div>
+                            <div class="skillList animationLeft">5、了解WEB安全机制，web安全漏洞，能够解决SQL盲注及跨站点脚本编制等web安全漏洞问题。</div>
+                            <div class="skillList animationLeft">6、了解前端框架React，Vue。</div>
+                        </div>
+                      
+                    </div>
+                </section>
+                <section id="projectExp">
+                    <div class="projectInfo clearFloat">
+                        <div id="proCont" class="animationFlipNext">
+                            <div class="proName animationFlip textShadow2" id="proName">
+							 <a href="http://www.gzfucai.cn" target='_blank' title="贵州福彩官网">贵州福彩官网及后台管理系统</a>
+							</div>
+                            <div class="proIntro">
+                                <div class="content">
+                                    <div class="subTitle textShadow2">
+                                        1、项目简介：
+                                    </div>
+                                    <div id="proIntro">
+                                        该项目采用B/S+C#+SQL Server ，运用asp.net开发，前端开发主要用到jQuery和JavaScript。项目开发历时两个月，团队3人，本人主要负责前端页面编写，动态显示数据，及部分后端读取数据的方法。该项目用于展示各福利彩票玩法的资讯以及贵州福彩中心的新闻讯息，方便彩民在网上及时了解福利彩票各种新闻动态，查询开奖信息。
+                                    </div>
+                                    <div class="subTitle textShadow2">2、本人职责：</div>
+                                    <div id="personDuty">
+                                        该项目采用的是B/S方式展示信息，所以页面框架基本以HTML+CSS为主，部分需要动态显示的数据信息，采用JavaScript+jQuery，着重使用ajax方法显示页面数据，加快页面加载速度，提升用户体验。
+                                        检测网站的浏览器兼容性问题及网站安全问题，添加cs shack及JavaScript方法，防止SQL盲注和跨站点脚本编制的WEB安全问题。
+                                    </div>
+                                    <div class="subTitle textShadow2">
+                                        3、项目成果：
+                                    </div>
+                                    <div id="proResult">
+                                        贵州福彩官网及后台管理系统于2016年3月初正式更新上线，相较于之前的旧版网站，提升了页面的可读性，及页面排版的舒适性。修改页面数据加载方式，提升了网站的加载速率，优化了用户体验。后期维护升级，添加了福彩视频，投注模拟器等新功能板块，网站访问量日益提升10%。
+                                        后台管理系统能及时更新新闻资讯，方便快捷展示最新动态。
+                                        网站地址：<a href="http://www.gzfucai.cn">贵州福彩官网</a>。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nextPro animationZoomIn" onclick="showPrePro()" id="prePro">上一个项目</div>
+                        <div class="nextPro animationZoomIn" onclick="showNextPro()" id="nextPro">下一个项目</div>
+                       
+                    </div>
+                </section>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <div class="">感谢您的访问，祝您天天开心，事事如意~~~(#^.^#)，有事请联系：<a href="mailto:ava_fdong9227@163.com">ava_fdong9227@163.com</a></div>
+    </footer>
+    <input type="hidden" value="1" id="proNum"/>
+</body>
+</html>
+<script type="text/javascript" src="../eCharts/echarts_old.js"></script>
+<script src="../JavaScript/common.js"></script>
+
+
+
+
